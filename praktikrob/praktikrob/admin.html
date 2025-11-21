@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Адмін</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="box">
+    <h2>Користувачі (дешифровані)</h2>
+
+    <input id="key" type="password" placeholder="Ключ шифрування">
+    <button onclick="loadUsers()">Показати</button>
+
+    <table id="table">
+        <thead>
+            <tr>
+                <th>№</th>
+                <th>Ім'я</th>
+                <th>Email</th>
+                <th>Час реєстрації</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<script src="crypto-js.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
